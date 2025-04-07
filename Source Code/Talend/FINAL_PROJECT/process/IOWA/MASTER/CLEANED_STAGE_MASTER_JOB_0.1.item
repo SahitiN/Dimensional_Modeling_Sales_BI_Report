@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" internalId="_5lWdMFqHEe-qhJL_6liUJg" name="JOB_NAME" prompt="JOB_NAME?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lWdMVqHEe-qhJL_6liUJg" name="JOB_RUN_ID" prompt="JOB_RUN_ID?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lWdMlqHEe-qhJL_6liUJg" name="STATUS" prompt="STATUS?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lWdM1qHEe-qhJL_6liUJg" name="dynamicQuery" prompt="dynamicQuery?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lWdNFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lWdNVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEQFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value="enc:system.encryption.key.v1:H4wpAVIl6liyfe+itUL1ietrhOonR3HMX+ALB74ffbQz8Gwtxw8sW4U0"/>
+    <contextParameter comment="" internalId="_5lXEQVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_role" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_role?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEQlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEQ1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXERFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXERVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXERlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXER1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXESFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_account" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_account?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXESVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXESlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXES1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_db" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_db?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXETFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="AUDIT"/>
+    <contextParameter comment="" internalId="_5lXETVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_regionID" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_regionID?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXETlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXET1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_role" prompt="SNOWFLAKE_DBC_IOWA_EDW_role?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEUFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_warehouse" prompt="SNOWFLAKE_DBC_IOWA_EDW_warehouse?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEUVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_EDW_keyAlias?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEUlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEU1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEVFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEVVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEVlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEV1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEWFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEWVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_db" prompt="SNOWFLAKE_DBC_IOWA_EDW_db?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEWlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_account" prompt="SNOWFLAKE_DBC_IOWA_EDW_account?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEW1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEXFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_regionID" prompt="SNOWFLAKE_DBC_IOWA_EDW_regionID?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEXVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEXlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:QE9zQaX2ByZVDVJObN/yD2OVunIPI5Kn/kuq7LWfitII1G50qGi+YNP0"/>
+    <contextParameter comment="" internalId="_5lXEX1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_schemaName" prompt="SNOWFLAKE_DBC_IOWA_EDW_schemaName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="EDW"/>
+    <contextParameter comment="" internalId="_5lXEYFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:rJrVNYgEjemTrCbcncoX1WxOEUPe2KZcII1xuxXOUH/SStIy4/7tfK9r"/>
+    <contextParameter comment="" internalId="_5lXEYVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEYlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEY1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEZFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_db" prompt="SNOWFLAKE_DBC_IOWA_STAGE_db?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEZVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_warehouse" prompt="SNOWFLAKE_DBC_IOWA_STAGE_warehouse?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEZlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEZ1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEaFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEaVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_regionID" prompt="SNOWFLAKE_DBC_IOWA_STAGE_regionID?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEalqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_account" prompt="SNOWFLAKE_DBC_IOWA_STAGE_account?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEa1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_schemaName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_schemaName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="STAGE"/>
+    <contextParameter comment="" internalId="_5lXEbFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEbVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEblqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEb1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_role" prompt="SNOWFLAKE_DBC_IOWA_STAGE_role?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEcFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" internalId="_5lXEcVqHEe-qhJL_6liUJg" name="JOB_NAME" prompt="JOB_NAME?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEclqHEe-qhJL_6liUJg" name="JOB_RUN_ID" prompt="JOB_RUN_ID?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEc1qHEe-qhJL_6liUJg" name="STATUS" prompt="STATUS?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEdFqHEe-qhJL_6liUJg" name="dynamicQuery" prompt="dynamicQuery?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEdVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEdlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEd1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value="enc:system.encryption.key.v1:jY1oiYPUXo2aKZ7+OSW+uOoGPjvuzEUZgy2EKEbZM0JsnAr0tlfjpQNr"/>
+    <contextParameter comment="" internalId="_5lXEeFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_role" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_role?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEeVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEelqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEe1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEfFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEfVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEflqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEf1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_account" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_account?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEgFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEgVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEglqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_db" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_db?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEg1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="AUDIT"/>
+    <contextParameter comment="" internalId="_5lXEhFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_regionID" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_regionID?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEhVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEhlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_role" prompt="SNOWFLAKE_DBC_IOWA_EDW_role?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEh1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_warehouse" prompt="SNOWFLAKE_DBC_IOWA_EDW_warehouse?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEiFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_EDW_keyAlias?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEiVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEilqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEi1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEjFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEjVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEjlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEj1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEkFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_db" prompt="SNOWFLAKE_DBC_IOWA_EDW_db?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEkVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_account" prompt="SNOWFLAKE_DBC_IOWA_EDW_account?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEklqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEk1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_regionID" prompt="SNOWFLAKE_DBC_IOWA_EDW_regionID?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXElFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXElVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:YKIWyIx2uF5qicSMZgkD7mo3I0nVyWyU+IENtdZ5naFUU2h9Ydvkap31"/>
+    <contextParameter comment="" internalId="_5lXEllqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_schemaName" prompt="SNOWFLAKE_DBC_IOWA_EDW_schemaName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="EDW"/>
+    <contextParameter comment="" internalId="_5lXEl1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:zxz8YlvzzYcauCxp9yA2wU73TMKnrd+xys0o8GLcaVlenxa4vkDAQPcb"/>
+    <contextParameter comment="" internalId="_5lXEmFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEmVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEmlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEm1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_db" prompt="SNOWFLAKE_DBC_IOWA_STAGE_db?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEnFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_warehouse" prompt="SNOWFLAKE_DBC_IOWA_STAGE_warehouse?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEnVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEnlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEn1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEoFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_regionID" prompt="SNOWFLAKE_DBC_IOWA_STAGE_regionID?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEoVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_account" prompt="SNOWFLAKE_DBC_IOWA_STAGE_account?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEolqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_schemaName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_schemaName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="STAGE"/>
+    <contextParameter comment="" internalId="_5lXEo1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEpFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEpVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEplqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_role" prompt="SNOWFLAKE_DBC_IOWA_STAGE_role?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEp1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="TEST">
+    <contextParameter comment="" internalId="_5lXEqFqHEe-qhJL_6liUJg" name="JOB_NAME" prompt="JOB_NAME?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEqVqHEe-qhJL_6liUJg" name="JOB_RUN_ID" prompt="JOB_RUN_ID?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEqlqHEe-qhJL_6liUJg" name="STATUS" prompt="STATUS?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEq1qHEe-qhJL_6liUJg" name="dynamicQuery" prompt="dynamicQuery?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXErFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXErVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXErlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value="enc:system.encryption.key.v1:Jd7/gyqx6RzT2H7zCE/3UgDA5R37Fot2IuqE3+fKT4hNeUcpHKT9Riif"/>
+    <contextParameter comment="" internalId="_5lXEr1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_role" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_role?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEsFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEsVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEslqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXEs1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEtFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEtVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEtlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_account" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_account?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEt1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEuFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEuVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_db" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_db?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEulqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="AUDIT"/>
+    <contextParameter comment="" internalId="_5lXEu1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_regionID" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_regionID?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEvFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXEvVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_role" prompt="SNOWFLAKE_DBC_IOWA_EDW_role?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEvlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_warehouse" prompt="SNOWFLAKE_DBC_IOWA_EDW_warehouse?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH"/>
+    <contextParameter comment="" internalId="_5lXEv1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_EDW_keyAlias?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEwFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEwVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEwlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXEw1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXExFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXExVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXExlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEx1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_db" prompt="SNOWFLAKE_DBC_IOWA_EDW_db?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXEyFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_account" prompt="SNOWFLAKE_DBC_IOWA_EDW_account?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXEyVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXEylqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_regionID" prompt="SNOWFLAKE_DBC_IOWA_EDW_regionID?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEy1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXEzFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:SzxY1cFZRpDXeIKrfLnyffhENP5T04Hcsx5N6TWEEk7gPxR1pg5K4RxE"/>
+    <contextParameter comment="" internalId="_5lXEzVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_schemaName" prompt="SNOWFLAKE_DBC_IOWA_EDW_schemaName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="EDW"/>
+    <contextParameter comment="" internalId="_5lXEzlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:zk8TLAoXNeKuXL+xtCDKW2sl3Yy5tacAklFynFK2HDxKpwbEUvp7P3ql"/>
+    <contextParameter comment="" internalId="_5lXEz1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE0FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE0VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE0lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_db" prompt="SNOWFLAKE_DBC_IOWA_STAGE_db?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXE01qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_warehouse" prompt="SNOWFLAKE_DBC_IOWA_STAGE_warehouse?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH"/>
+    <contextParameter comment="" internalId="_5lXE1FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXE1VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE1lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE11qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_regionID" prompt="SNOWFLAKE_DBC_IOWA_STAGE_regionID?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE2FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_account" prompt="SNOWFLAKE_DBC_IOWA_STAGE_account?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXE2VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_schemaName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_schemaName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="STAGE"/>
+    <contextParameter comment="" internalId="_5lXE2lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE21qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE3FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXE3VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_role" prompt="SNOWFLAKE_DBC_IOWA_STAGE_role?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE3lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_5lXE31qHEe-qhJL_6liUJg" name="JOB_NAME" prompt="JOB_NAME?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE4FqHEe-qhJL_6liUJg" name="JOB_RUN_ID" prompt="JOB_RUN_ID?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE4VqHEe-qhJL_6liUJg" name="STATUS" prompt="STATUS?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE4lqHEe-qhJL_6liUJg" name="dynamicQuery" prompt="dynamicQuery?" promptNeeded="false" repositoryContextId="_wlAPIFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE41qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_keyAlias?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE5FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE5VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_password?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value="enc:system.encryption.key.v1:NB4DTixkcKSqqZN/tIUph00PBNshT2cBQkuiqpUbD8M0b1Nk0r5uBO1Q"/>
+    <contextParameter comment="" internalId="_5lXE5lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_role" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_role?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE51qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE6FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE6VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_warehouse?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXE6lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE61qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_userPassword_userId?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXE7FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_jdbcParameters?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE7VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_account" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_account?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXE7lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE71qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE8FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_db" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_db?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXE8VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_schemaName?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value="AUDIT"/>
+    <contextParameter comment="" internalId="_5lXE8lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_regionID" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_regionID?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE81qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_AUDIT_loginTimeout?" promptNeeded="false" repositoryContextId="_VrlVoFpoEe-qhJL_6liUJg" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXE9FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_role" prompt="SNOWFLAKE_DBC_IOWA_EDW_role?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE9VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_warehouse" prompt="SNOWFLAKE_DBC_IOWA_EDW_warehouse?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXE9lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_EDW_keyAlias?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE91qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE-FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE-VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXE-lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE-1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_EDW_loginTimeout?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXE_FqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_EDW_jdbcParameters?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE_VqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXE_lqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_db" prompt="SNOWFLAKE_DBC_IOWA_EDW_db?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXE_1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_account" prompt="SNOWFLAKE_DBC_IOWA_EDW_account?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXFAFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_userId?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXFAVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_regionID" prompt="SNOWFLAKE_DBC_IOWA_EDW_regionID?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFAlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_EDW_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFA1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_EDW_userPassword_password?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:r/RjLY0xX0/K5h4aCz2IZvVrLuaD43TcZ05SlNJcjqvxsiekgt4SxGg4"/>
+    <contextParameter comment="" internalId="_5lXFBFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_EDW_schemaName" prompt="SNOWFLAKE_DBC_IOWA_EDW_schemaName?" promptNeeded="false" repositoryContextId="_fxXZIFjDEe-wVqsi2ubRYQ" type="id_String" value="EDW"/>
+    <contextParameter comment="" internalId="_5lXFBVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_password?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value="enc:system.encryption.key.v1:gBElhCkQvjGQmFGQUSM+KYMbz4dCLS6zGL3aanyaQ0a2zd+Em8x8v8iK"/>
+    <contextParameter comment="" internalId="_5lXFBlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFB1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_scope?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFCFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters" prompt="SNOWFLAKE_DBC_IOWA_STAGE_jdbcParameters?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFCVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_db" prompt="SNOWFLAKE_DBC_IOWA_STAGE_db?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="IOWA_LIQUOR"/>
+    <contextParameter comment="" internalId="_5lXFClqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_warehouse" prompt="SNOWFLAKE_DBC_IOWA_STAGE_warehouse?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="COMPUTE_WH_LARGE"/>
+    <contextParameter comment="" internalId="_5lXFC1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout" prompt="SNOWFLAKE_DBC_IOWA_STAGE_loginTimeout?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Integer" value="15"/>
+    <contextParameter comment="" internalId="_5lXFDFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthPassword?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXFDVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_clientSecret?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_5lXFDlqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_regionID" prompt="SNOWFLAKE_DBC_IOWA_STAGE_regionID?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFD1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_account" prompt="SNOWFLAKE_DBC_IOWA_STAGE_account?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="iqsgkap-cw23562"/>
+    <contextParameter comment="" internalId="_5lXFEFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_schemaName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_schemaName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="STAGE"/>
+    <contextParameter comment="" internalId="_5lXFEVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthTokenEndpoint?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFElqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName" prompt="SNOWFLAKE_DBC_IOWA_STAGE_oauthProperties_oauthUserName?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFE1qHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId" prompt="SNOWFLAKE_DBC_IOWA_STAGE_userPassword_userId?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value="rohithreddykota"/>
+    <contextParameter comment="" internalId="_5lXFFFqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_role" prompt="SNOWFLAKE_DBC_IOWA_STAGE_role?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5lXFFVqHEe-qhJL_6liUJg" name="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias" prompt="SNOWFLAKE_DBC_IOWA_STAGE_keyAlias?" promptNeeded="false" repositoryContextId="_QsK7oFjDEe-wVqsi2ubRYQ" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx8192M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:/YR8E002XLdxyuzC3pkKMqWsMNS1DVfkx9mNI/K2"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;/Users/deepakkumar/talend_software/applications/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="JDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5aWMbFwE5OKZYjlQEURRszr2+tCJxp+39Av3HZON"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="PRE_LOG_JOB"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="FINAL_PROJECT:_9YpWMFpnEe-qhJL_6liUJg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="STATUS"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;STARTED&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JOB_RUN_ID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="pid"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JOB_NAME"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="PRE_LOG_JOB"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="FINAL_PROJECT:_9YpWMFpnEe-qhJL_6liUJg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="STATUS"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;COMPLETED&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JOB_RUN_ID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="pid"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JOB_NAME"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="STG_IOWA_LIQUOR_PRODUCT_CLEANED_SFK"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="FINAL_PROJECT:_lgNEEFjrEe-wVqsi2ubRYQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="STG_IOWA_LIQUOR_SALES_CLEANED_SFK"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="FINAL_PROJECT:_mIgJQFjiEe-wVqsi2ubRYQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="STG_IOWA_LIQUOR_STORES_CLEANED_SFK"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="FINAL_PROJECT:_FOInsFjnEe-wVqsi2ubRYQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_5"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tRunJob_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tRunJob_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a6d64c62-d9d5-4095-b06b-7abda6602692"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yGxf3rGi/fnbH4OUdWV53oEuAVtplERQOCwJ9/9dWKQZ/ZeFrJS6+LGoolqaHCUee2MOL5w1hca/&#13;
+NdTubUTDlA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59cee39b-6469-4b9e-b956-cee1772d8170"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VQe2iBBggGS7SrtSvPEfq4XDpqQPtq1NvMMlN5AJaSaZlghEGj9pzqulTs68wSIfqOGVB3TMSoF4&#13;
+524x+u/ezw==</DigestValue></Reference></SignedInfo><SignatureValue>QCYXh0tloag/hMZQnEwogVvL2QsZAWs5Si54fZjb4u8+nLyuviPmtY8Ymsq3DFcdkOv+32N4rxNo&#13;
+gx6Ef7HKeEDUyFw3Dx1Jd9EB9/AHkuQhdIxzFBJB+dJNBuKPlpQmTre2XOSwJrZYusphv0R3n312&#13;
+EopBDb8GelcPquGgIBTExY93wMhdL+W46FKQVIHz3Kct2U7EPRm6gaEedrXc6AfHjjG2rxYD+3aY&#13;
+CR+mpvLpI0m4L6cWRViNVEl7vIQ1pcSJnJT/fBw5J/Zc7XkTUvHcef6gpAm70uCj5vLEQ+eaqmE3&#13;
+XGFQ6pOgeBDvKYqmonnWEc4zUpDjMOCWINgrJg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59cee39b-6469-4b9e-b956-cee1772d8170" Target="#_a6d64c62-d9d5-4095-b06b-7abda6602692"><Timestamp>2024-08-14 21:55:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
