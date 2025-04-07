@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Iowa_Liquor_Products_notCleaned.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item Number" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Category Name" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Item Description" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Vendor" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Vendor Name" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Pack" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Inner Pack" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Age" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Proof" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="List Date" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="UPC" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="SCC" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="State Bottle Cost" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="State Case Cost" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="State Bottle Retail" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+            <Field name="Report Date" size="254" source="File: C:\Users\vyash\OneDrive\Desktop\Sahiti\finalproject\Datasets\Iowa_Liquor_Products_notCleaned.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_118f25076dcf26438afed4d9b621d034~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="126" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_a8e66338c9e15942b370f51463a1b978~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="654" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_f67c81089e499f48ab928702089a2c42~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-08-11 12:00:37</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>-1</Operand>
+              <StartDate>2024-08-11 12:00:37</StartDate>
+              <EndDate>2024-08-11 12:00:37</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Value] = "-1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_c391eaddbf47b24ba0b7cefe5662a8c1~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="918" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="Value" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1074" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_4260de5d0ad7be4983f5294dac18b15c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="498" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Item Number" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Item Number" selected="False" />
+            <Field field="Category Name" selected="False" />
+            <Field field="Item Description" selected="False" />
+            <Field field="Vendor" selected="False" />
+            <Field field="Vendor Name" selected="False" />
+            <Field field="Bottle Volume (ml)" selected="False" />
+            <Field field="Pack" selected="False" />
+            <Field field="Inner Pack" selected="False" />
+            <Field field="Age" selected="False" />
+            <Field field="Proof" selected="False" />
+            <Field field="List Date" selected="False" />
+            <Field field="UPC" selected="False" />
+            <Field field="SCC" selected="False" />
+            <Field field="State Bottle Cost" selected="False" />
+            <Field field="State Case Cost" selected="False" />
+            <Field field="State Bottle Retail" selected="False" />
+            <Field field="Report Date" selected="False" />
+            <Field field="Item Number_hasSpecialChar" selected="True" />
+            <Field field="Category Name_hasSpecialChar" selected="True" />
+            <Field field="Item Description_hasSpecialChar" selected="True" />
+            <Field field="Vendor_hasSpecialChar" selected="True" />
+            <Field field="Vendor Name_hasSpecialChar" selected="True" />
+            <Field field="Bottle Volume (ml)_hasSpecialChar" selected="True" />
+            <Field field="Pack_hasSpecialChar" selected="True" />
+            <Field field="Inner Pack_hasSpecialChar" selected="True" />
+            <Field field="Age_hasSpecialChar" selected="True" />
+            <Field field="Proof_hasSpecialChar" selected="True" />
+            <Field field="List Date_hasSpecialChar" selected="True" />
+            <Field field="UPC_hasSpecialChar" selected="True" />
+            <Field field="SCC_hasSpecialChar" selected="True" />
+            <Field field="State Bottle Cost_hasSpecialChar" selected="True" />
+            <Field field="State Case Cost_hasSpecialChar" selected="True" />
+            <Field field="State Bottle Retail_hasSpecialChar" selected="True" />
+            <Field field="Report Date_hasSpecialChar" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\vyash\AppData\Local\Temp\Engine_9340_e59928067612c549bc724b5a8fd6e9e0_\Engine_9340_59d07145ed2bbe43b53155e1b8aa8357~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="270" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>All</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Item Number" />
+            <Field name="Category Name" />
+            <Field name="Item Description" />
+            <Field name="Vendor" />
+            <Field name="Vendor Name" />
+            <Field name="Bottle Volume (ml)" />
+            <Field name="Pack" />
+            <Field name="Inner Pack" />
+            <Field name="Age" />
+            <Field name="Proof" />
+            <Field name="List Date" />
+            <Field name="UPC" />
+            <Field name="SCC" />
+            <Field name="State Bottle Cost" />
+            <Field name="State Case Cost" />
+            <Field name="State Bottle Retail" />
+            <Field name="Report Date" />
+            <Field name="*Unknown" />
+          </Fields>
+          <NewFieldAddOn>_hasSpecialChar</NewFieldAddOn>
+          <NewFieldAddOnPos>Suffix</NewFieldAddOnPos>
+          <CopyOutput value="True" />
+          <Expression><![CDATA[REGEX_CountMatches([_CurrentField_], "[^a-zA-Z0-9\s]") > 0
+]]></Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[REGEX_CountMatches([_CurrentField_], "[^a-zA-Z0-9\s]") > 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Iowa_Liquor_Products_notCleaned_Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c80ba12c-6c1c-4af6-b9b5-2bb95c1aba46" />
+      <Telemetry>
+        <PreviousWorkflowId value="9116d15e-8953-41b6-87be-c404a3f9b930" />
+        <OriginWorkflowId value="9116d15e-8953-41b6-87be-c404a3f9b930" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
