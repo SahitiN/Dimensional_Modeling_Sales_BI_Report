@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DelimitedFileConnection ContextId="_dbb04FgFEe-cd-6ZXp6paw" ContextMode="true" Encoding="context.Iowa_Liquor_Sales_Tsv_Structure_Encoding" FieldSeparatorType="Custom UTF8" FieldSeparatorValue="context.Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator" FilePath="context.Iowa_Liquor_Sales_Tsv_Structure_File" FirstLineCaption="true" HeaderValue="context.Iowa_Liquor_Sales_Tsv_Structure_Header" RowSeparatorValue="context.Iowa_Liquor_Sales_Tsv_Structure_RowSeparator" Server="Localhost 127.0.0.1" UseHeader="true" contextName="Dev" dataPackage="_ixy1kVgFEe-cd-6ZXp6paw" name="Iowa_Liquor_Sales_Tsv_Structure" xmi:id="_ixy1kFgFEe-cd-6ZXp6paw"/>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_ixy1kFgFEe-cd-6ZXp6paw" name="default" xmi:id="_ixy1kVgFEe-cd-6ZXp6paw">
+    <ownedElement id="_PQ9TMFgFEe-cd-6ZXp6paw" label="metadata_Iowa_Liquor_Sales_Tsv" xmi:id="_ixy1klgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="Invoice_Item_Number" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1k1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Date" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1lFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Store_Number" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1lVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Store_Name" length="36" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1llgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Address" length="26" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1l1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="City" length="15" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1mFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Zip_Code" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1mVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Store_Location" length="36" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1mlgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="County_Number" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1m1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="County" length="13" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1nFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Category" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1nVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Category_Name" length="25" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1nlgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Vendor_Number" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1n1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Vendor_Name" length="32" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1oFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Item_Number" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1oVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Item_Description" length="32" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ixy1olgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Pack" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1o1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Bottle_Volume__ml" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1pFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="State_Bottle_Cost" length="5" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_ixy1pVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="State_Bottle_Retail" length="5" pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float" xmi:id="_ixy1plgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Bottles_Sold" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_ixy1p1gFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Sale__Dollars" length="7" pattern="&quot;dd-MM-yyyy&quot;" precision="5" talendType="id_Float" xmi:id="_ixy1qFgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Volume_Sold__Liters" length="6" pattern="&quot;dd-MM-yyyy&quot;" precision="5" talendType="id_Float" xmi:id="_ixy1qVgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Volume_Sold__Gallons" length="5" pattern="&quot;dd-MM-yyyy&quot;" precision="4" talendType="id_Float" xmi:id="_ixy1qlgFEe-cd-6ZXp6paw" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c78b052-2c21-44a8-91d8-39d3c55e89b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CtG5N0Ijb/R6qbh/VL5JkQXx3V/DVQkyTT2JSP3sSybHqhPwowICbRu2V0PiwuAH4bsVphZ+RnQW&#13;
+fv4D+s00cw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_89ca4592-f07e-4d0d-b353-9441c8fa9009"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Z9EjfIW/4+U3Qz/8pAooV1muWoVyFA1eUC1jNSO+n/t57XOBdu5gsmH4yhwK05FLFwu9+2bqtDVg&#13;
+LHJ9658f+g==</DigestValue></Reference></SignedInfo><SignatureValue>D+ObV5VbmGG4K7HChpF9x553Iqn5tYe8KiITU8yvytpwlSTJ4EKmZIe2MhPPI/0iemVe1fBafL/1&#13;
+HtVpEo+vpvcIV5iE3IquJ5rediqNtMkhRhNSw1yersGCoh+yv9ILPvRAOwRyx6bxlDEZ7k+dT3bA&#13;
+hfEueUWk8RCQ0yDhB4nNlfLCPKExDq+RMvXZe17Ivfr/syUQad5m9qXQpVgclA20qclFlrVZanvW&#13;
+ugdgAACbRxqZSJ4w/eP/n40l3hT7RDJpDvo28HX0vu1px+0xV4ZpyIfa+ligd12yYBxtGEWN/vBF&#13;
+UABXX2Uu0NEaHLZ9yt7RIC9FCCl8R+fxIjkxBw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_89ca4592-f07e-4d0d-b353-9441c8fa9009" Target="#_8c78b052-2c21-44a8-91d8-39d3c55e89b7"><Timestamp>2024-08-14 19:33:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
