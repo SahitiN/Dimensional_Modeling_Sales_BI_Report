@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_-sjc0FfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_-sjc0VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_-sjc0lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_by_Year.tsv" xmi:id="_-sjc01fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_-sjc1FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_-sjc1VfwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_-sjc1lfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_-sjc11fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_-sjc2FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_by_Year.tsv" xmi:id="_-sjc2VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_-sjc2lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_-sjc21fwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_-sjc3FfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_-sjc3VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_-sjc3lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_by_Year.tsv" xmi:id="_-sjc31fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_-sjc4FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_-sjc4VfwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_-sjc4lfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_-sjc41fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_-sjc5FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_by_Year.tsv" xmi:id="_-sjc5VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_-sjc5lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_by_Year_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_-sjc51fwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3f10d5ae-7d40-4237-ace3-6f6b650a60b1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cLCIqEZxrZd2Z95OOwC7YT8fK10RShPuioCjxfo8kFs/j62qMNEwUE0J4RI7MH2Vbhqh0mDHPEcs&#13;
++gmlFXjWWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_26890fe2-2004-439f-b461-dc761141921e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QTjpB0Kb1ewGSZNnnMF0vd1/9fUtWekd/YBn50bRQPTQUbnYO8KCQeZhL5m0kZQjufNGLaLWe7KC&#13;
+fWlci0HA+w==</DigestValue></Reference></SignedInfo><SignatureValue>fhtF6nRe6GAGqP+jfUE1QHyruxn7VC+rfKDIf526cpeFsoGmDGvG+sWI1QQbhrGw4ijGXwFHFlPj&#13;
+80ozgZYQWFbQDRTDQ51WRi415azknMLEwAVXZ/+JMxNe5o7Io/kDPkqqm+KjoFEU7Q+u2O/7Xmsy&#13;
+BLKj753hfPzds9CyEMN3cGg04Hi+YnyJHPKcUoyP5NBP2qMugQD6qhzHuyoaNK1UGBrQityHqo9F&#13;
+gNPINgHlzalcGAsTlsKNk69cwh3f2I3jqqEj5tlX+SqE0Z8ptgzhwSUdWkxG/dI6RKxv8zhhiLIQ&#13;
+s7j2YNLpgwY7CtBeUupJklTG0RDY3meCjiDB8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_26890fe2-2004-439f-b461-dc761141921e" Target="#_3f10d5ae-7d40-4237-ace3-6f6b650a60b1"><Timestamp>2024-08-11 14:49:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

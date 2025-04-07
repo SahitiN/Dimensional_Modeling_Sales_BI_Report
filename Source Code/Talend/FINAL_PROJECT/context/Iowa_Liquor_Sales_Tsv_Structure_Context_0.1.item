@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_dcMC0FgFEe-cd-6ZXp6paw">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_dcMC0VgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="E:/Deepak/DadaBi/final project/Data-IowaLiquorSales/Data-IowaLiquorSales/Iowa_Liquor_Sales.tsv" xmi:id="_dcMC0lgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_dcMC01gFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_dcMC1FgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_dcMC1VgFEe-cd-6ZXp6paw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_dcMC1lgFEe-cd-6ZXp6paw">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_dcMC11gFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="E:/Deepak/DadaBi/final project/Data-IowaLiquorSales/Data-IowaLiquorSales/Iowa_Liquor_Sales.tsv" xmi:id="_dcMC2FgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_dcMC2VgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_dcMC2lgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_dcMC21gFEe-cd-6ZXp6paw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_dcMC3FgFEe-cd-6ZXp6paw">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_dcMC3VgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="E:/Deepak/DadaBi/final project/Data-IowaLiquorSales/Data-IowaLiquorSales/Iowa_Liquor_Sales.tsv" xmi:id="_dcMC3lgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_dcMC31gFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_dcMC4FgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_dcMC4VgFEe-cd-6ZXp6paw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_dcMC4lgFEe-cd-6ZXp6paw">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_dcMC41gFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="E:/Deepak/DadaBi/final project/Data-IowaLiquorSales/Data-IowaLiquorSales/Iowa_Liquor_Sales.tsv" xmi:id="_dcMC5FgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_dcMC5VgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_dcMC5lgFEe-cd-6ZXp6paw"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_dcMC51gFEe-cd-6ZXp6paw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cbe69ffa-3bf9-47fb-b0ba-dba54083be87"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>N3C1ULukRKskla5du4x/yH0vn8MwsM6g97kMiV1bhH7yPiZuZneqEa7eT8nL3risk69cl5roCEKL&#13;
+MKEtgWufoA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f9d9f58f-4a85-4386-b5fd-2655d0670988"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ttoLqK8emIa0W5asJIt5xVyEcK2sJKFII6MxG26LjGmIAGTvPULKvtmIEuRtCTvb3Jp3HXiVppxO&#13;
+bbEHQtsl9Q==</DigestValue></Reference></SignedInfo><SignatureValue>SX0pif8/53n3lj9clVFurYLu3lyuieM9Pvyr7rYbJE/oC0tl+B+0AGwc89WBr+9sjgVAknKJNhbr&#13;
+Rw0TQLa5GGkzuQvraG6CXHFwW9AbUbCLmj5+uexQLPofn5at4+cDfrIjOH6bSptPe4I70MqWlrai&#13;
+1Tc5yBUTZQ1Hw5DiU3fHPN2aI9pK+fgoSLHBC8QY10JVsl4W2Z8DPWcSFZ0AkvF6GWnWBwUiGrFE&#13;
+RK4sHqbmVkyv67AGXvYV/4/G3CU44N5ZjpTBV8y1/gkomSiGy5CVQK7Gff0pZjJfbb3zmuGL98V3&#13;
+DCBSgLObA5WUvrUvLDg6DXvz3W94kCy4mrbsYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f9d9f58f-4a85-4386-b5fd-2655d0670988" Target="#_cbe69ffa-3bf9-47fb-b0ba-dba54083be87"><Timestamp>2024-08-14 19:33:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

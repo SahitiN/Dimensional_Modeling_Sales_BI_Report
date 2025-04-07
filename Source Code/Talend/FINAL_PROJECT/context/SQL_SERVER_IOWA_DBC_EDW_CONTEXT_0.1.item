@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_FnhT8FgqEe-LmPOrmgtv9g">
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Password" prompt="SQL_SERVER_IOWA_DBC_EDW_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:0Sumvcn6XRG1Y1pN6nFlbFmhO0weToaw9cl7zs8wPnE4Rw==" xmi:id="_FnhT8VgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Server" prompt="SQL_SERVER_IOWA_DBC_EDW_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="10.110.81.164" xmi:id="_FnhT8lgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Port" prompt="SQL_SERVER_IOWA_DBC_EDW_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_FnhT81gqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Schema" prompt="SQL_SERVER_IOWA_DBC_EDW_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="EDW" xmi:id="_FnhT9FgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams" prompt="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_FnhT9VgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Login" prompt="SQL_SERVER_IOWA_DBC_EDW_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg7370" xmi:id="_FnhT9lgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Database" prompt="SQL_SERVER_IOWA_DBC_EDW_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="IOWA" xmi:id="_FnhT91gqEe-LmPOrmgtv9g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="DEV" xmi:id="_FnhT-FgqEe-LmPOrmgtv9g">
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Password" prompt="SQL_SERVER_IOWA_DBC_EDW_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:bXcNbIEz4wT74X+E1u/64UgtXnl2w/44Vn7wqn35vNzHOg==" xmi:id="_FnhT-VgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Server" prompt="SQL_SERVER_IOWA_DBC_EDW_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="10.110.81.164" xmi:id="_FnhT-lgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Port" prompt="SQL_SERVER_IOWA_DBC_EDW_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_FnhT-1gqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Schema" prompt="SQL_SERVER_IOWA_DBC_EDW_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="EDW" xmi:id="_FnhT_FgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams" prompt="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_FnhT_VgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Login" prompt="SQL_SERVER_IOWA_DBC_EDW_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg7370" xmi:id="_FnhT_lgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Database" prompt="SQL_SERVER_IOWA_DBC_EDW_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="IOWA" xmi:id="_FnhT_1gqEe-LmPOrmgtv9g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="PROD" xmi:id="_FnhUAFgqEe-LmPOrmgtv9g">
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Password" prompt="SQL_SERVER_IOWA_DBC_EDW_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:7k7iyGuSUGHotDdctLbTvLetpoHstEtDa3EFLdulvKSnPQ==" xmi:id="_FnhUAVgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Server" prompt="SQL_SERVER_IOWA_DBC_EDW_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="10.110.81.164" xmi:id="_FnhUAlgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Port" prompt="SQL_SERVER_IOWA_DBC_EDW_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_FnhUA1gqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Schema" prompt="SQL_SERVER_IOWA_DBC_EDW_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="EDW" xmi:id="_FnhUBFgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams" prompt="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_FnhUBVgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Login" prompt="SQL_SERVER_IOWA_DBC_EDW_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg7370" xmi:id="_FnhUBlgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Database" prompt="SQL_SERVER_IOWA_DBC_EDW_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="IOWA" xmi:id="_FnhUB1gqEe-LmPOrmgtv9g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="TEST" xmi:id="_FnhUCFgqEe-LmPOrmgtv9g">
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Password" prompt="SQL_SERVER_IOWA_DBC_EDW_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:YGG7PH8a4Hq4Kop1wP9C1gwaVcDepTCGzveeCyV2828EWg==" xmi:id="_FnhUCVgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Server" prompt="SQL_SERVER_IOWA_DBC_EDW_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="10.110.81.164" xmi:id="_FnhUClgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Port" prompt="SQL_SERVER_IOWA_DBC_EDW_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_FnhUC1gqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Schema" prompt="SQL_SERVER_IOWA_DBC_EDW_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="EDW" xmi:id="_FnhUDFgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams" prompt="SQL_SERVER_IOWA_DBC_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_FnhUDVgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Login" prompt="SQL_SERVER_IOWA_DBC_EDW_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg7370" xmi:id="_FnhUDlgqEe-LmPOrmgtv9g"/>
+    <contextParameter comment="" name="SQL_SERVER_IOWA_DBC_EDW_Database" prompt="SQL_SERVER_IOWA_DBC_EDW_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="IOWA" xmi:id="_FnhUD1gqEe-LmPOrmgtv9g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3c4e1a16-78f7-46ec-a421-e2f57954d61e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nft9yN51DQTuG0D2jWP3JtUqRoJGrJoLhsfU3G6FKkBhvou/+tXxqzBrWk9LYRTm47yVm7xgH6rO&#13;
+uh4BmwfS+A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c6935c72-c4e0-4d33-b758-f057233f97fd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OEvbxV3m33obDvRTgDj2bhuMfPbHdJgwxEjnbWGPm0R7A+AEANEHBLtgcdMnAOHicFlTeef8AkUP&#13;
+uMztf3MlHA==</DigestValue></Reference></SignedInfo><SignatureValue>LYzXdlOHT2lD4yHvmQIm6f+mCdqlpI6/s04qEHaa+LHDtS9CvtZ51lYPECZDWg3sgJypAtIBXa8U&#13;
+brajKzi5oUh/eGPdMyljGDY4B69vanIpPf+gXn6B9QwwsYoUdpbHOGIwlWVGRXSO8bZ5Bf9KNPae&#13;
+wvaBVx9Nxjkxrv5f85V2Lk29tOauXX06i+ewmVgbVlyJnStSjGgQ0YqgXw9iLznsDkCh4VDjiAKK&#13;
+Qgy/Xn4bd2sdWNlejYDSn3yb6PbOOHhjSMKEIlc3Gf1kTMgOaQAUexTYvo5MP9xlS2R1KNaQojve&#13;
+2ltgTCVrAY08EJ8xK8jumYrcXG9a3mYowHQ+zQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c6935c72-c4e0-4d33-b758-f057233f97fd" Target="#_3c4e1a16-78f7-46ec-a421-e2f57954d61e"><Timestamp>2024-08-11 21:38:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

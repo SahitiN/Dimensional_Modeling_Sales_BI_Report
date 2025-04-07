@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_m1TT0FfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_m1TT0VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_m1TT0lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_notCleaned.tsv" xmi:id="_m1TT01fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_m1TT1FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_m1TT1VfwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_m1TT1lfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_m1TT11fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_m1TT2FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_notCleaned.tsv" xmi:id="_m1TT2VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_m1TT2lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_m1TT21fwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_m1TT3FfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_m1TT3VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_m1TT3lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_notCleaned.tsv" xmi:id="_m1TT31fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_m1TT4FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_m1TT4VfwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_m1TT4lfwEe-LncxyVvFR7Q">
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="UTF-8" xmi:id="_m1TT41fwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1" xmi:id="_m1TT5FfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_File?" promptNeeded="false" repositoryContextId="" type="id_File" value="/Users/deepakkumar/Documents/Summer 24/DADABI/Final_project/Source Data/data/Iowa_Liquor_Sales_notCleaned.tsv" xmi:id="_m1TT5VfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;" xmi:id="_m1TT5lfwEe-LncxyVvFR7Q"/>
+    <contextParameter comment="" name="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator" prompt="Iowa_Liquor_Sales_notCleaned_Tsv_Structure_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\t&quot;" xmi:id="_m1TT51fwEe-LncxyVvFR7Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a9917b20-dd25-407c-baa7-3f46bbce2ca8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y6zVeCzJk6ryhuPpnoHkvxUvK0w2cm6DV5QKzV4u/LOLAf2cqxDy+d3tO891N8cq9O7XDFWCktB/&#13;
+zhOdf/VSWw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_20111165-2e41-429c-b361-98f6dafb8522"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BxieAXw+LnOzCWTz1xWqV5ber0sOe6Ur4Wp+xbUQ9Weq74acxkiOijvTm22hCTlADyMFG1ajQcix&#13;
+IGjQ6I5yQw==</DigestValue></Reference></SignedInfo><SignatureValue>mjgbZax1ZMJ5H+Oz8q+vjxcctnFHvquQ5Tkx+LmibB2mmPWu7TA6gmEYwYHPu3Ua6ihTccaJQwCD&#13;
+QbekWCvoGvZUjl3XiM12UuWUilI2WP97Mq+QJkhPFWLr/0qIx/mBGEgCUo+yByDFrOEJsKq1Ozuv&#13;
+hDn6eaGhKoTtj76JeLm/JhJR8BiThZybursjGmOvDDj2r9tnpqRds880hrm+IG5kqI4/ycytzvKL&#13;
+6Od1p5cp12vsz7min41RsTTpTw11w2PuluKgTvsAwWe0B7d97s9EuyOHlFCS37BEZZlZRmRWeWyl&#13;
+XD887hyIxJmEglNr+xisVVVoJf2eGdSKL6la+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_20111165-2e41-429c-b361-98f6dafb8522" Target="#_a9917b20-dd25-407c-baa7-3f46bbce2ca8"><Timestamp>2024-08-11 14:47:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
