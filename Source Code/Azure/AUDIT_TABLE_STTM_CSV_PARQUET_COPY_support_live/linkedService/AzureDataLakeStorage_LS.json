@@ -1,0 +1,11 @@
+{
+    "name": "AzureDataLakeStorage_LS",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://damgadls.dfs.core.windows.net/"
+        }
+    }
+}

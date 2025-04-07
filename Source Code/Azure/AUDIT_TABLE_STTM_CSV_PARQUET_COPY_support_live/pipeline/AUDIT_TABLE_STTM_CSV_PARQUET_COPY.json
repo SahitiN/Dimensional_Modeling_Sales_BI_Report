@@ -1,0 +1,229 @@
+{
+    "name": "AUDIT_TABLE_STTM_CSV_PARQUET_COPY",
+    "properties": {
+        "activities": [
+            {
+                "name": "STTM",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "DelimitedTextSource",
+                        "additionalColumns": [
+                            {
+                                "name": "DI_CREATEDATE",
+                                "value": {
+                                    "value": "@if(\n    and(\n        greaterOrEquals(formatDateTime(utcnow(), 'MM-dd'), '03-14'),\n        lessOrEquals(formatDateTime(utcnow(), 'MM-dd'), '11-07')\n    ),\n    formatDateTime(addHours(utcnow(), -4), 'yyyy-MM-ddTHH:mm:ssZ'),\n    formatDateTime(addHours(utcnow(), -5), 'yyyy-MM-ddTHH:mm:ssZ')\n)\n",
+                                    "type": "Expression"
+                                }
+                            },
+                            {
+                                "name": "DI_JOBPID",
+                                "value": {
+                                    "value": "@pipeline().RunId",
+                                    "type": "Expression"
+                                }
+                            }
+                        ],
+                        "storeSettings": {
+                            "type": "AzureBlobFSReadSettings",
+                            "recursive": false,
+                            "enablePartitionDiscovery": false
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "SnowflakeV2Sink",
+                        "preCopyScript": {
+                            "value": "TRUNCATE @{concat(pipeline().parameters.SCHEMA_NAME,'.',pipeline().parameters.TABLE_NAME)};",
+                            "type": "Expression"
+                        },
+                        "importSettings": {
+                            "type": "SnowflakeImportCopyCommand"
+                        }
+                    },
+                    "enableStaging": true,
+                    "stagingSettings": {
+                        "linkedServiceName": {
+                            "referenceName": "AzureBlobStorage_LS",
+                            "type": "LinkedServiceReference"
+                        },
+                        "path": {
+                            "value": "rootblob",
+                            "type": "Expression"
+                        }
+                    },
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "mappings": [
+                            {
+                                "source": {
+                                    "name": "SRC_FILE_NAME",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "SRC_FILE_NAME",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "SRC_COLUMN_NAME",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "SRC_COLUMN_NAME",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "SRC_COLUMN_TYPE",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "SRC_COLUMN_TYPE",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "SRC_PHYSICAL_TYPE",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "SRC_PHYSICAL_TYPE",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "TGT_FILE_NAME",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "TGT_FILE_NAME",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "TGT_COLUMN_NAME",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "TGT_COLUMN_NAME",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "TGT_PHYSICAL_TYPE",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "TGT_PHYSICAL_TYPE",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "DI_CREATEDATE",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "DI_CREATEDATE",
+                                    "type": "DateTime"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "DI_JOBPID",
+                                    "type": "String"
+                                },
+                                "sink": {
+                                    "name": "DI_JOBPID",
+                                    "type": "String"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "ADLS_DL_FL",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "FilePath": {
+                                "value": "@pipeline().parameters.FILE_PATH",
+                                "type": "Expression"
+                            },
+                            "FileName": {
+                                "value": "@pipeline().parameters.FILE_NAME",
+                                "type": "Expression"
+                            },
+                            "ColumnDelimiter": {
+                                "value": "@pipeline().parameters.DELIMITER",
+                                "type": "Expression"
+                            }
+                        }
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "SNOWFLAKE_IOWA_DS",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "SCHEMA_NAME": {
+                                "value": "@pipeline().parameters.SCHEMA_NAME",
+                                "type": "Expression"
+                            },
+                            "TABLE_NAME": {
+                                "value": "@pipeline().parameters.TABLE_NAME",
+                                "type": "Expression"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "parameters": {
+            "SCHEMA_NAME": {
+                "type": "string",
+                "defaultValue": "AUDIT"
+            },
+            "TABLE_NAME": {
+                "type": "string",
+                "defaultValue": "STTM_CSV_PARQUET"
+            },
+            "FILE_PATH": {
+                "type": "string",
+                "defaultValue": "rootdir/iowa/audit/"
+            },
+            "FILE_NAME": {
+                "type": "string",
+                "defaultValue": "STTM.csv"
+            },
+            "DELIMITER": {
+                "type": "string",
+                "defaultValue": ","
+            }
+        },
+        "folder": {
+            "name": "IOWA_SNOWFLAKE"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-08-14T02:45:22Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

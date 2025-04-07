@@ -1,0 +1,21 @@
+{
+    "name": "SNOWFLAKE_IOWA_LS",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "SnowflakeV2",
+        "typeProperties": {
+            "authenticationType": "Basic",
+            "accountIdentifier": "iqsgkap-cw23562",
+            "user": "rohithreddykota",
+            "database": "IOWA_LIQUOR",
+            "warehouse": "COMPUTE_WH",
+            "role": "ACCOUNTADMIN",
+            "encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2ZGRlYzNkNi1lNmQwLTQ1ZmEtYTgyNC00OWZhZDg4MTU3YWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+        },
+        "connectVia": {
+            "referenceName": "SelfHostedintegrationRuntime",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}

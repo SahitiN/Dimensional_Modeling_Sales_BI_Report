@@ -1,0 +1,6 @@
+selected resource name:		PL_COPY_MULTIPLE_FILES_PARQUET_TO_SNOWFLAKE_DB
+selected resource type:		pipeline
+factory name:			damgADF
+factory location:		eastus
+subscription id:		5d53859c-3b8e-43da-93e3-2b80134068cf
+time of download (UTC):		Thu, 15 Aug 2024 02:30:45 GMT

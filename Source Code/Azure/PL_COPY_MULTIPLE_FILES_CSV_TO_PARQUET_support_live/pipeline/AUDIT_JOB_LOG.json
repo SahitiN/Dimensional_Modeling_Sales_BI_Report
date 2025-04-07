@@ -1,0 +1,53 @@
+{
+    "name": "AUDIT_JOB_LOG",
+    "properties": {
+        "activities": [
+            {
+                "name": "AUDIT_SP_RUN",
+                "type": "Script",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "linkedServiceName": {
+                    "referenceName": "SNOWFLAKE_IOWA_LS",
+                    "type": "LinkedServiceReference"
+                },
+                "typeProperties": {
+                    "scripts": [
+                        {
+                            "type": "Query",
+                            "text": {
+                                "value": "CALL AUDIT.SP_LOG_JOB_RUN('@{pipeline().parameters.JOB_NAME}', '@{pipeline().parameters.JOB_RUN_ID}' ,'@{pipeline().parameters.STATUS}')",
+                                "type": "Expression"
+                            }
+                        }
+                    ],
+                    "scriptBlockExecutionTimeout": "02:00:00"
+                }
+            }
+        ],
+        "parameters": {
+            "JOB_NAME": {
+                "type": "string"
+            },
+            "JOB_RUN_ID": {
+                "type": "string"
+            },
+            "STATUS": {
+                "type": "string"
+            }
+        },
+        "folder": {
+            "name": "IOWA_SNOWFLAKE"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-08-14T21:42:52Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

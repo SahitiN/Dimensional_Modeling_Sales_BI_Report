@@ -1,0 +1,31 @@
+{
+    "name": "SNOWFLAKE_IOWA_DS",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "SNOWFLAKE_IOWA_LS",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "SCHEMA_NAME": {
+                "type": "string"
+            },
+            "TABLE_NAME": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "SnowflakeV2Table",
+        "schema": [],
+        "typeProperties": {
+            "schema": {
+                "value": "@dataset().SCHEMA_NAME",
+                "type": "Expression"
+            },
+            "table": {
+                "value": "@dataset().TABLE_NAME",
+                "type": "Expression"
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

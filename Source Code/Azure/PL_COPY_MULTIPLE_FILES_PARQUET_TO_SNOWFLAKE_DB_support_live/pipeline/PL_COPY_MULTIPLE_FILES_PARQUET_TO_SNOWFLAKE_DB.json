@@ -1,0 +1,364 @@
+{
+    "name": "PL_COPY_MULTIPLE_FILES_PARQUET_TO_SNOWFLAKE_DB",
+    "properties": {
+        "activities": [
+            {
+                "name": "Lookup Metadata Table",
+                "type": "Lookup",
+                "dependsOn": [
+                    {
+                        "activity": "JOB_LOG-PRE",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "SnowflakeV2Source",
+                        "exportSettings": {
+                            "type": "SnowflakeExportCopyCommand"
+                        }
+                    },
+                    "dataset": {
+                        "referenceName": "SNOWFLAKE_IOWA_DS",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "SCHEMA_NAME": {
+                                "value": "@pipeline().parameters.AUDIT_SCHEMA_NAME",
+                                "type": "Expression"
+                            },
+                            "TABLE_NAME": {
+                                "value": "@pipeline().parameters.AUDIT_TABLE_NAME",
+                                "type": "Expression"
+                            }
+                        }
+                    },
+                    "firstRowOnly": false
+                }
+            },
+            {
+                "name": "ForEach File",
+                "type": "ForEach",
+                "dependsOn": [
+                    {
+                        "activity": "Lookup Metadata Table",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "items": {
+                        "value": "@activity('Lookup Metadata Table').output.value",
+                        "type": "Expression"
+                    },
+                    "activities": [
+                        {
+                            "name": "Copy Data ADLS to SNOWFLAKE DB",
+                            "type": "Copy",
+                            "dependsOn": [
+                                {
+                                    "activity": "DROP TABLE IF EXIST",
+                                    "dependencyConditions": [
+                                        "Succeeded"
+                                    ]
+                                }
+                            ],
+                            "policy": {
+                                "timeout": "0.05:0:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "typeProperties": {
+                                "source": {
+                                    "type": "ParquetSource",
+                                    "additionalColumns": [
+                                        {
+                                            "name": "DI_CREATEDATE",
+                                            "value": {
+                                                "value": "@if(\n    and(\n        greaterOrEquals(formatDateTime(utcnow(), 'MM-dd'), '03-14'),\n        lessOrEquals(formatDateTime(utcnow(), 'MM-dd'), '11-07')\n    ),\n    formatDateTime(addHours(utcnow(), -4), 'yyyy-MM-ddTHH:mm:ssZ'),\n    formatDateTime(addHours(utcnow(), -5), 'yyyy-MM-ddTHH:mm:ssZ')\n)\n",
+                                                "type": "Expression"
+                                            }
+                                        },
+                                        {
+                                            "name": "DI_JOBPID",
+                                            "value": {
+                                                "value": "@pipeline().RunId",
+                                                "type": "Expression"
+                                            }
+                                        }
+                                    ],
+                                    "storeSettings": {
+                                        "type": "AzureBlobFSReadSettings",
+                                        "recursive": false,
+                                        "enablePartitionDiscovery": false
+                                    },
+                                    "formatSettings": {
+                                        "type": "ParquetReadSettings"
+                                    }
+                                },
+                                "sink": {
+                                    "type": "SnowflakeV2Sink",
+                                    "preCopyScript": {
+                                        "value": "BEGIN\n    EXECUTE IMMEDIATE '@{item().DDL_TX}';\nEND;",
+                                        "type": "Expression"
+                                    },
+                                    "importSettings": {
+                                        "type": "SnowflakeImportCopyCommand"
+                                    }
+                                },
+                                "enableStaging": true,
+                                "stagingSettings": {
+                                    "linkedServiceName": {
+                                        "referenceName": "AzureBlobStorage_LS",
+                                        "type": "LinkedServiceReference"
+                                    },
+                                    "path": {
+                                        "value": "rootblob",
+                                        "type": "Expression"
+                                    }
+                                },
+                                "enableSkipIncompatibleRow": false
+                            },
+                            "inputs": [
+                                {
+                                    "referenceName": "DS_Parquet_ADLS",
+                                    "type": "DatasetReference",
+                                    "parameters": {
+                                        "FilePath": {
+                                            "value": "@item().FILE_PATH",
+                                            "type": "Expression"
+                                        },
+                                        "FileName": {
+                                            "value": "@item().FILE_NAME",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                }
+                            ],
+                            "outputs": [
+                                {
+                                    "referenceName": "SNOWFLAKE_IOWA_DS",
+                                    "type": "DatasetReference",
+                                    "parameters": {
+                                        "SCHEMA_NAME": {
+                                            "value": "@item().SCHEMA_NAME",
+                                            "type": "Expression"
+                                        },
+                                        "TABLE_NAME": {
+                                            "value": "@item().TABLE_NAME",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "Script",
+                            "dependsOn": [
+                                {
+                                    "activity": "Copy Data ADLS to SNOWFLAKE DB",
+                                    "dependencyConditions": [
+                                        "Succeeded"
+                                    ]
+                                }
+                            ],
+                            "policy": {
+                                "timeout": "0.12:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "linkedServiceName": {
+                                "referenceName": "SNOWFLAKE_IOWA_LS",
+                                "type": "LinkedServiceReference"
+                            },
+                            "typeProperties": {
+                                "scripts": [
+                                    {
+                                        "type": "Query",
+                                        "text": {
+                                            "value": "UPDATE @{concat(pipeline().parameters.AUDIT_SCHEMA_NAME,'.',pipeline().parameters.AUDIT_TABLE_NAME)}\nSET SOURCE_COUNT = @{activity('Copy Data ADLS to SNOWFLAKE DB').output.rowsRead},\nTARGET_COUNT = @{activity('Copy Data ADLS to SNOWFLAKE DB').output.rowsCopied},\nDURATION = @{activity('Copy Data ADLS to SNOWFLAKE DB').output.copyDuration},\nUPDATE_DATE = GETDATE()\nWHERE SCHEMA_NAME = '@{item().SCHEMA_NAME}'\nAND TABLE_NAME = '@{item().TABLE_NAME}'",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                ],
+                                "scriptBlockExecutionTimeout": "02:00:00"
+                            }
+                        },
+                        {
+                            "name": "DROP TABLE IF EXIST",
+                            "type": "Script",
+                            "dependsOn": [],
+                            "policy": {
+                                "timeout": "0.12:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "linkedServiceName": {
+                                "referenceName": "SNOWFLAKE_IOWA_LS",
+                                "type": "LinkedServiceReference"
+                            },
+                            "typeProperties": {
+                                "scripts": [
+                                    {
+                                        "type": "Query",
+                                        "text": {
+                                            "value": "BEGIN\nEXECUTE IMMEDIATE '@{concat('DROP TABLE IF EXISTS ',item().SCHEMA_NAME, '.', item().TABLE_NAME)}';\nEND\t ",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                ],
+                                "scriptBlockExecutionTimeout": "02:00:00"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "JOB_LOG-PRE",
+                "type": "ExecutePipeline",
+                "dependsOn": [],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "AUDIT_JOB_LOG",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true,
+                    "parameters": {
+                        "JOB_NAME": {
+                            "value": "@pipeline().Pipeline",
+                            "type": "Expression"
+                        },
+                        "JOB_RUN_ID": {
+                            "value": "@pipeline().RunId",
+                            "type": "Expression"
+                        },
+                        "STATUS": {
+                            "value": "\"STARTED\"",
+                            "type": "Expression"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "JOB_LOG-POST",
+                "type": "ExecutePipeline",
+                "dependsOn": [
+                    {
+                        "activity": "ForEach File",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "AUDIT_JOB_LOG",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true,
+                    "parameters": {
+                        "JOB_NAME": {
+                            "value": "@pipeline().Pipeline",
+                            "type": "Expression"
+                        },
+                        "JOB_RUN_ID": {
+                            "value": "@pipeline().RunId",
+                            "type": "Expression"
+                        },
+                        "STATUS": {
+                            "value": "\"COMPLETED\"",
+                            "type": "Expression"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "JOB_LOG-FAIL",
+                "type": "ExecutePipeline",
+                "dependsOn": [
+                    {
+                        "activity": "ForEach File",
+                        "dependencyConditions": [
+                            "Failed"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "AUDIT_JOB_LOG",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true,
+                    "parameters": {
+                        "JOB_NAME": {
+                            "value": "@pipeline().Pipeline",
+                            "type": "Expression"
+                        },
+                        "JOB_RUN_ID": {
+                            "value": "@pipeline().RunId",
+                            "type": "Expression"
+                        },
+                        "STATUS": {
+                            "value": "\"FAILED\"",
+                            "type": "Expression"
+                        }
+                    }
+                }
+            }
+        ],
+        "parameters": {
+            "AUDIT_SCHEMA_NAME": {
+                "type": "string",
+                "defaultValue": "AUDIT"
+            },
+            "AUDIT_TABLE_NAME": {
+                "type": "string",
+                "defaultValue": "METADATA"
+            }
+        },
+        "variables": {
+            "FileName": {
+                "type": "String"
+            }
+        },
+        "folder": {
+            "name": "IOWA_SNOWFLAKE"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-08-14T21:42:53Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
